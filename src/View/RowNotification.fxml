@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="row-notification" stylesheets="@Styles/Dark.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.RowNotificationController">
+   <children>
+      <Rectangle fx:id="typeColor" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="31.0" layoutX="23.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Label fx:id="title" layoutX="93.0" layoutY="18.0" prefHeight="31.0" prefWidth="407.0" styleClass="notfication-row" />
+      <Label fx:id="scheduled" layoutX="536.0" layoutY="14.0" prefHeight="31.0" prefWidth="227.0" styleClass="notfication-row" />
+   </children>
+</AnchorPane>

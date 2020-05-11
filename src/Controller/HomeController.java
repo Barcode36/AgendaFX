@@ -13,7 +13,7 @@ import Main.MainRegister;
 import Main.MainUpdate;
 import Model.Notification;
 import Model.PostIt;
-import Model.RowNotification;
+import Model.RowLoader;
 import Model.User;
 import java.net.URL;
 import java.util.ArrayList;
@@ -334,9 +334,11 @@ public class HomeController implements Initializable {
 
         for (Notification notification : notifications) {
 
-            RowNotification row = new RowNotification(notifications.get(cont));
+          RowLoader row = new RowLoader();
+          
+          row.loadRow(notifications.get(cont));
 
-            alPanes.add(row);
+          alPanes.add(row);
 
             cont++;
         }
